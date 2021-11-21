@@ -1,0 +1,276 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 90px 0px 90px 0px;
+    margin: 0;
+    overflow-x: none;
+    background-image: url('cassie-boca-x-tbVqkfQCU-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-card-glass {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    -webkit-backdrop-filter: blur(10px);  
+    backdrop-filter: blur(10px); 
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgb(228 228 228 / 25%); 
+    border-radius: 7px;
+    font-weight: 700;
+    transition: linear 0.3s;
+}
+
+.main-card-glass:hover {
+    background-color: rgb(228 228 228 / 35%); 
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 35%);
+}
+
+.footer {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgb(228 228 228 / 25%); 
+    border-radius: 7px;
+    font-weight: 700;
+    transition: linear 0.4s;
+}
+
+.footer:hover {
+    background-color: rgb(228 228 228 / 35%); 
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 35%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-footer {
+    width: 35px;
+    margin: 20px;
+}
+
+.img-footer:hover{
+    filter: drop-shadow(0 0 0.35rem #E6AF2E);
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    width: 205px;
+    margin-right: 55px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+aside {
+    margin: 1px;
+}
+
+hr {
+    border: 1.2px solid black;
+}
+
+input {
+    border: 1.5px solid whitesmoke;
+    padding: 10px;
+    background-color :transparent;
+    color: black;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+.btn-login {
+    padding: 10px;
+    width: 70px;
+    background-color: transparent;
+    border: 1.5px solid whitesmoke;
+    font-size: small;
+    font-weight: 700;
+    border-radius: 7px;
+    margin: auto;
+    color: black;
+    transition: ease-in-out 0.4s;
+} 
+
+#myBtn {
+    cursor: pointer;
+    padding: 10px;
+    width: 70px;
+    background-color: white;
+    border: 1.5px solid whitesmoke;
+    font-size: small;
+    font-weight: 700;
+    border-radius: 7px;
+    margin: auto;
+    color: black;
+    transition: ease-in-out 0.4s;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 200px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+  
+.modal-content {
+    background-color: #555555;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 50%;
+    display: block;
+    color: whitesmoke;
+    border-radius: 7px;
+    align-content: center;
+    text-align: center;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.img-about {
+    height: 45px;
+    width: auto;
+    filter: drop-shadow(0 0 0.35rem #E6AF2E);
+    margin: 15px;
+}
+
+.btn-login:hover {
+    background-color: white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 0.6; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 768px) {
+    body, html {
+        scroll-behavior: smooth;
+        scroll-snap-type: none;
+        margin: 0px;
+        padding-bottom: 100px;
+        overflow-x: hidden;
+        
+    }
+
+    .container {
+        display: block;
+        justify-content: center;
+    }
+
+    .title {
+        width: 205px;
+        text-align: center;
+        padding-top: 70px;
+        margin-left: 50px;
+    }
+
+    aside {
+        margin-left: 1px;
+    }
+
+    .main-card-glass {
+        width: 295px;
+        height: auto;
+        padding: 20px;
+        margin: auto;
+        text-align: center;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+        background-color: rgb(228 228 228 / 15%); 
+        border-radius: 7px;
+        font-weight: 700;
+    }
+    
+
+    .footer {
+        width: 295px;
+        height: auto;
+        padding: 20px;
+        margin: auto;
+        text-align: center;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+        background-color: rgb(228 228 228 / 15%); 
+        border-radius: 7px;
+        font-weight: 700;
+    }
+    .container-footer {
+        display : inline-block;
+    }
+    .img-footer {
+        width: 30px;
+        margin: 25px 10px 10px 10px;
+    }
+    
+    .img-footer:hover{
+        filter: drop-shadow(0 0 0.35rem #E6AF2E);
+    }
+    .modal-content {
+        background-color: #555555;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        width: 80%;
+        display: block;
+        color: whitesmoke;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        transition: 0.4s;
+    }
+    
+}
